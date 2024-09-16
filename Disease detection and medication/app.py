@@ -11,9 +11,6 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.metrics import accuracy_score
 import sqlite3
 
-# Set the option to opt-in to future behavior and suppress downcasting warning
-pd.set_option('future.no_silent_downcasting', True)
-
 # Database connection
 @st.cache_resource
 def init_connection():
